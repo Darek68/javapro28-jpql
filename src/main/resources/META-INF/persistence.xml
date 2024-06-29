@@ -10,13 +10,14 @@
         <class>ru.darek.Address</class>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
-            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/postgres?currentSchema=homework28" />
-            <property name="javax.persistence.jdbc.user" value="postgres" />
-            <property name="javax.persistence.jdbc.password" value="352800" />
+            <!--  <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/postgres?currentSchema=homework28" /> -->
+              <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5436/postgres" />
+              <property name="javax.persistence.jdbc.user" value="postgres" />
+              <property name="javax.persistence.jdbc.password" value="352800" />
 
-            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
-            <property name="hibernate.hbm2ddl.auto" value="create" />
-            <!--hibernate.hbm2ddl.auto = create - создавать схему заново, удаляя имеющуюся и все данные-->
+              <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+              <property name="hibernate.hbm2ddl.auto" value="create" />
+              <!--hibernate.hbm2ddl.auto = create - создавать схему заново, удаляя имеющуюся и все данные-->
             <!--hibernate.hbm2ddl.auto = update - обновить схему при наличии несоответстий с БД и сохранить данные-->
             <!--hibernate.hbm2ddl.auto = create-drop - аналогично create + удалить схему после -->
             <!--hibernate.hbm2ddl.auto = validate - провалидировать схему и выбросить исключение при несоответствии-->
